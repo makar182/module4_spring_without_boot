@@ -1,4 +1,4 @@
-package ru.practicum.user;
+package ru.practicum;
 
 public interface UserShort {
     String getFirstName();

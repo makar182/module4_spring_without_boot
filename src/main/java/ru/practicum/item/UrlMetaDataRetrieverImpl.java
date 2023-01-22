@@ -24,6 +24,7 @@ import java.time.Instant;
 
 @Slf4j
 @Service
+public
 class UrlMetaDataRetrieverImpl implements UrlMetaDataRetriever {
     private final HttpClient client;
 

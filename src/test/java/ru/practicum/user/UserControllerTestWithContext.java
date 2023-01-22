@@ -9,6 +9,10 @@ import org.springframework.test.context.junit.jupiter.web.SpringJUnitWebConfig;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
+import ru.practicum.UserController;
+import ru.practicum.UserDto;
+import ru.practicum.UserService;
+import ru.practicum.UserState;
 import ru.practicum.config.WebConfig;
 
 import java.nio.charset.StandardCharsets;

@@ -1,4 +1,4 @@
-package ru.practicum.user;
+package ru.practicum;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

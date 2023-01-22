@@ -1,4 +1,4 @@
-package ru.practicum.user;
+package ru.practicum;
 
 import org.springframework.context.annotation.Lazy;
 
