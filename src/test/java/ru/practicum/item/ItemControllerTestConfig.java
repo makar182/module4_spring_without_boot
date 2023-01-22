@@ -1,15 +1,15 @@
-package ru.practicum.user;
+package ru.practicum.item;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import ru.practicum.UserService;
 
 import static org.mockito.Mockito.mock;
 
 @Configuration
-public class UserControllerTestConfig {
+public class ItemControllerTestConfig {
     @Bean
-    public UserService userService() {
-        return mock(UserService.class);
+    public ItemService itemService() {
+        return mock(ItemService.class);
     }
 }
+

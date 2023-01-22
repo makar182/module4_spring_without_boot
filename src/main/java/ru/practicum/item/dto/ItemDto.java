@@ -1,13 +1,13 @@
 package ru.practicum.item.dto;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.*;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
-import java.io.Serializable;
-import java.time.Instant;
 import java.util.Set;
 
 @Getter
+@Setter
 @Builder(toBuilder = true)
 public class ItemDto {
     private final Long id;

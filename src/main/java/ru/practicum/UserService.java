@@ -1,8 +1,8 @@
-package ru.practicum.user;
+package ru.practicum;
 
 import java.util.List;
 
-interface UserService {
+public interface UserService {
     List<UserDto> getAllUsers();
     UserDto saveUser(UserDto userDto);
 

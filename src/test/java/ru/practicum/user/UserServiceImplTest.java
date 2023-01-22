@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
+import ru.practicum.*;
 import ru.practicum.config.PersistenceConfig;
 
 import javax.persistence.EntityManager;
@@ -29,7 +30,7 @@ class UserServiceImplTest {
     @Test
     void saveUser() {
         // given
-        UserDto userDto = makeUserDto("some@email.com", "Пётр", "Иванов");
+        UserDto userDto = makeUserDto("ivanov@yandex.ru", "Иван", "Иванов");
 
         // when
         service.saveUser(userDto);
@@ -51,9 +52,9 @@ class UserServiceImplTest {
     void getAllUsers() {
         // given
         List<UserDto> sourceUsers = List.of(
-                makeUserDto("ivan@email", "Ivan", "Ivanov"),
-                makeUserDto("petr@email", "Petr", "Petrov"),
-                makeUserDto("vasilii@email", "Vasilii", "Vasiliev")
+                makeUserDto("ivanov@yandex.ru", "Ivan", "Ivanov"),
+                makeUserDto("petrov@yandex.ru", "Ivan", "Petrov"),
+                makeUserDto("sidorov@email", "Ivan", "Sidorov")
         );
 
         for (UserDto user : sourceUsers) {

@@ -1,4 +1,4 @@
-package ru.practicum.user;
+package ru.practicum;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 @Transactional(readOnly = true)
 @RequiredArgsConstructor
-class UserServiceImpl implements UserService {
+public class UserServiceImpl implements UserService {
     private final UserRepository repository;
 
     @Override
